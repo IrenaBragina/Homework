@@ -8,7 +8,7 @@ score_2 = 42
 
 
 tasks_total = score_2+score_1
-# time_avg = result
+
 print('В команде Мастера кода участников: %s !' % team1_num )
 print('Итого сегодня в командах участников: %s и %s !' %(team1_num, team2_num ))
 print('Команда Волшебники данных решила задач: {}'.format(score_2))
