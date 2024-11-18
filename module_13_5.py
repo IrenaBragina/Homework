@@ -13,12 +13,12 @@ class UserState(StatesGroup):
     age = State()
     growth = State()
     weight  = State()
-kb = ReplyKeyboardMarkup()
+kb = ReplyKeyboardMarkup(resize_keyboard = True)
 button = KeyboardButton(text="Рассчитать")
 button1 = KeyboardButton(text="Информация")
 kb.add(button)
 kb.add(button1)
-resize_keyboard = True
+
 @dp.message_handler(commands = 'start')
 async def start(message):
     await message.answer(text="Привет, я помогу рассчитать каллории", reply_markup=kb)
