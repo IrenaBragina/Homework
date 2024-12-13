@@ -14,5 +14,5 @@ async def user_id(user_id:str)-> dict:
     return {"message": f"Вы вошли как пользователь № {user_id}"}
 
 @app.get("/user")
-async def user_id(username:str,age:int)-> dict:
+async def user_info(username:str,age:int)-> dict:
     return {"message": f"Информация о пользователе. Имя: {username}, Возраст: {age}"}
